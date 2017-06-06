@@ -6,7 +6,15 @@
 
 
 ### 效果图
-  * ![](https://github.com/maojingios/MKMap/blob/master/MKMap/MKMapLocation.gif)
+    ![](https://github.com/maojingios/MKMap/blob/master/MKMap/MKMapLocation.gif)
 
 
+### 1.配置info.plist
 
+      可以通过配置NSLocationAlwaysUsageDescription或者NSLocationWhenInUseUsageDescription来告诉用户使用定位服务的目的，并且注意这个配置是必须
+      的，如果不进行配置则默认情况下应用无法使用定位服务，打开应用不会给出打开定位服务的提示，除非安装后自己设置此应用的定位服务。
+         
+### 2.引入头文件
+
+     #import <CoreLocation/CoreLocation.h>
+     #import <MapKit/MapKit.h> 

@@ -20,21 +20,16 @@
      #import <MapKit/MapKit.h> 
      
 ### 3.判断
-`
-if (![CLLocationManager locationServicesEnabled]) {//判断定位是否可用
-   NSLog(@"please open location service");
-    }
-    
-    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {//用户授权
-    [_locationManager requestWhenInUseAuthorization];
-    }
-    else if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusAuthorizedWhenInUse){
-    _locationManager.delegate = self;
-    _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        
-        CLLocationDistance distance = 0.5;
-        _locationManager.distanceFilter = distance;
-        [_locationManager startUpdatingLocation];
-    } 
-   `
 
+      if (![CLLocationManager locationServicesEnabled]) {//判断定位是否可用
+          NSLog(@"please open location service");
+      }
+      if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {//用户授权
+          [_locationManager requestWhenInUseAuthorization];
+      }else if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusAuthorizedWhenInUse){
+          _locationManager.delegate = self;
+          _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+          CLLocationDistance distance = 0.5;
+          _locationManager.distanceFilter = distance;
+          [_locationManager startUpdatingLocation];
+      } 

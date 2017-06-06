@@ -51,3 +51,19 @@
               return annotationView;
           }else return nil;
       }
+      
+      
+### 5.优化（使用过程中会发现内存暴增）
+
+      #pragma mark - 显示区域发生变化时调用
+      -(void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated{
+          //内存优化
+          [_mapView removeFromSuperview];
+          [self.view addSubview:_mapView];
+      }
+
+# 总结
+
+以上是需要注意的几点，涉及权限设置、大头针的复用和自定义（是不是想起了UITableViewCell的复用）、以及内存优化！为比较基础的内容。希望大家多多指教。
+
+

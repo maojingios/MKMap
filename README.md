@@ -36,9 +36,9 @@
 ### 4.实现自定义大头针
 
       -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
-          
-          if ([annotation isKindOfClass:[MKinAnnotation class]]) {//区别当前玩家位置
-              /static NSString * identify = @"annotation";
+          //区别当前玩家位置
+          if ([annotation isKindOfClass:[MKinAnnotation class]]) {
+              static NSString * identify = @"annotation";
               MKAnnotationView * annotationView = [_mapView dequeueReusableAnnotationViewWithIdentifier:identify];
               if (!annotationView) {
                   annotationView = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:identify];
@@ -51,4 +51,3 @@
               return annotationView;
           }else return nil;
       }
-

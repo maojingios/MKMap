@@ -6,7 +6,7 @@
 
 
 ### 效果图
-  ![](https://github.com/maojingios/MKMap/blob/master/MKMap/MKMapLocation.gif)
+  * ![](https://github.com/maojingios/MKMap/blob/master/MKMap/MKMapLocation.gif)
 
 
 

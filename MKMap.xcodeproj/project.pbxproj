@@ -20,8 +20,6 @@
 		C42DC2BD1EE1544900638BBB /* cangImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2BB1EE1544900638BBB /* cangImage.png */; };
 		C42DC2BF1EE1596700638BBB /* coffe.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2BE1EE1596700638BBB /* coffe.png */; };
 		C44DAAAB1EE4EF13008A974A /* MKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C44DAAAA1EE4EF13008A974A /* MKLocationManager.m */; };
-		C4900F9C1EE6B0C600229E41 /* MKMapLocation.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4900F9B1EE6B0C600229E41 /* MKMapLocation.gif */; };
-		C4900F9E1EE6B28700229E41 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = C4900F9D1EE6B28700229E41 /* location.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +63,6 @@
 		C42DC2BE1EE1596700638BBB /* coffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffe.png; sourceTree = "<group>"; };
 		C44DAAA91EE4EF13008A974A /* MKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLocationManager.h; sourceTree = "<group>"; };
 		C44DAAAA1EE4EF13008A974A /* MKLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKLocationManager.m; sourceTree = "<group>"; };
-		C4900F9B1EE6B0C600229E41 /* MKMapLocation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MKMapLocation.gif; sourceTree = "<group>"; };
-		C4900F9D1EE6B28700229E41 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +113,6 @@
 		C42DC2831EE136F300638BBB /* MKMap */ = {
 			isa = PBXGroup;
 			children = (
-				C4900F9B1EE6B0C600229E41 /* MKMapLocation.gif */,
-				C4900F9D1EE6B28700229E41 /* location.png */,
 				C42DC2BA1EE1544900638BBB /* binImage.png */,
 				C42DC2BB1EE1544900638BBB /* cangImage.png */,
 				C42DC2BE1EE1596700638BBB /* coffe.png */,
@@ -274,12 +268,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4900F9E1EE6B28700229E41 /* location.png in Resources */,
 				C42DC2941EE136F300638BBB /* LaunchScreen.storyboard in Resources */,
 				C42DC2911EE136F300638BBB /* Assets.xcassets in Resources */,
 				C42DC28F1EE136F300638BBB /* Main.storyboard in Resources */,
 				C42DC2BF1EE1596700638BBB /* coffe.png in Resources */,
-				C4900F9C1EE6B0C600229E41 /* MKMapLocation.gif in Resources */,
 				C42DC2BC1EE1544900638BBB /* binImage.png in Resources */,
 				C42DC2BD1EE1544900638BBB /* cangImage.png in Resources */,
 			);

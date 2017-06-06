@@ -18,3 +18,25 @@
 
      #import <CoreLocation/CoreLocation.h>
      #import <MapKit/MapKit.h> 
+     
+### 3.判断
+         //判断定位是否可用
+          if (![CLLocationManager locationServicesEnabled]) {
+              NSLog(@"please open location service");
+          }
+
+          //用户授权
+          if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+
+              [_locationManager requestWhenInUseAuthorization];
+          }
+          else if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusAuthorizedWhenInUse){
+
+              _locationManager.delegate = self;
+              _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+
+              CLLocationDistance distance = 0.5;
+              _locationManager.distanceFilter = distance;
+              [_locationManager startUpdatingLocation];
+          }
+

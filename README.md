@@ -32,4 +32,23 @@
           CLLocationDistance distance = 0.5;
           _locationManager.distanceFilter = distance;
           [_locationManager startUpdatingLocation];
-      } 
+      } 
+### 4.实现自定义大头针
+
+      -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+          
+          if ([annotation isKindOfClass:[MKinAnnotation class]]) {//区别当前玩家位置
+              /static NSString * identify = @"annotation";
+              MKAnnotationView * annotationView = [_mapView dequeueReusableAnnotationViewWithIdentifier:identify];
+              if (!annotationView) {
+                  annotationView = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:identify];
+                  annotationView.canShowCallout = true;
+                  annotationView.calloutOffset = CGPointMake(0, 0);
+                  annotationView.leftCalloutAccessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"coffe"]];
+              }
+              annotationView.annotation = annotation;
+              annotationView.image = ((MKinAnnotation *)annotation).image;
+              return annotationView;
+          }else return nil;
+      }
+

@@ -14,6 +14,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 #import "MKinAnnotation.h"
+#import "MKLocationManager.h"
 
 @interface ViewController ()<CLLocationManagerDelegate,MKMapViewDelegate>
 {
@@ -31,6 +32,11 @@
     
     [self mkMapView];
     
+//    [[MKLocationManager manager] whereAmI];
+    
+
+    
+    
 }
 -(void)mkMapView{
 
@@ -40,7 +46,7 @@
     _mapView.delegate = self;
     
     //添加点击手势
-    UITapGestureRecognizer * longTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAddAnnotation:)];
+    UILongPressGestureRecognizer * longTap = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(tapAddAnnotation:)];
     [_mapView addGestureRecognizer:longTap];
     
     _locationManager = [[CLLocationManager alloc] init];

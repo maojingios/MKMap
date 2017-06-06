@@ -19,6 +19,7 @@
 		C42DC2BC1EE1544900638BBB /* binImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2BA1EE1544900638BBB /* binImage.png */; };
 		C42DC2BD1EE1544900638BBB /* cangImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2BB1EE1544900638BBB /* cangImage.png */; };
 		C42DC2BF1EE1596700638BBB /* coffe.png in Resources */ = {isa = PBXBuildFile; fileRef = C42DC2BE1EE1596700638BBB /* coffe.png */; };
+		C44DAAAB1EE4EF13008A974A /* MKLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C44DAAAA1EE4EF13008A974A /* MKLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		C42DC2BA1EE1544900638BBB /* binImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = binImage.png; sourceTree = "<group>"; };
 		C42DC2BB1EE1544900638BBB /* cangImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cangImage.png; sourceTree = "<group>"; };
 		C42DC2BE1EE1596700638BBB /* coffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffe.png; sourceTree = "<group>"; };
+		C44DAAA91EE4EF13008A974A /* MKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLocationManager.h; sourceTree = "<group>"; };
+		C44DAAAA1EE4EF13008A974A /* MKLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				C42DC2881EE136F300638BBB /* AppDelegate.m */,
 				C42DC28A1EE136F300638BBB /* ViewController.h */,
 				C42DC28B1EE136F300638BBB /* ViewController.m */,
+				C44DAAA91EE4EF13008A974A /* MKLocationManager.h */,
+				C44DAAAA1EE4EF13008A974A /* MKLocationManager.m */,
 				C42DC2B71EE148F000638BBB /* MKinAnnotation.h */,
 				C42DC2B81EE148F000638BBB /* MKinAnnotation.m */,
 				C42DC28D1EE136F300638BBB /* Main.storyboard */,
@@ -295,6 +300,7 @@
 			files = (
 				C42DC28C1EE136F300638BBB /* ViewController.m in Sources */,
 				C42DC2B91EE148F000638BBB /* MKinAnnotation.m in Sources */,
+				C44DAAAB1EE4EF13008A974A /* MKLocationManager.m in Sources */,
 				C42DC2891EE136F300638BBB /* AppDelegate.m in Sources */,
 				C42DC2861EE136F300638BBB /* main.m in Sources */,
 			);
@@ -536,6 +542,7 @@
 				C42DC2B01EE136F300638BBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C42DC2B11EE136F300638BBB /* Build configuration list for PBXNativeTarget "MKMapTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +551,7 @@
 				C42DC2B31EE136F300638BBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C42DC2B41EE136F300638BBB /* Build configuration list for PBXNativeTarget "MKMapUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +560,7 @@
 				C42DC2B61EE136F300638BBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -103,25 +103,25 @@ static MKLocationManager * _manager = nil;
         NSLog(@"%@--%@--%@",[NSThread currentThread],[MKLocationManager manager].mkProvince,[MKLocationManager manager].mkCity);
     }];
     
-    [_locationManager stopUpdatingLocation];
+    [_locationManager stopUpdatingLocation];//关闭定位
     
     NSLog(@"经度：%f,纬度：%f,海拔：%f,航向：%f,行走速度：%f",coordinate.longitude,coordinate.latitude,location.altitude,location.course,location.speed);
     
 }
 
-/* NSString *name=placemark.name;//地名
- NSString *thoroughfare=placemark.thoroughfare;//街道
- NSString *subThoroughfare=placemark.subThoroughfare; //街道相关信息，例如门牌等
- NSString *locality=placemark.locality; // 城市
- NSString *subLocality=placemark.subLocality; // 城市相关信息，例如标志性建筑
- NSString *administrativeArea=placemark.administrativeArea; // 州
- NSString *subAdministrativeArea=placemark.subAdministrativeArea; //其他行政区域信息
- NSString *postalCode=placemark.postalCode; //邮编
- NSString *ISOcountryCode=placemark.ISOcountryCode; //国家编码
- NSString *country=placemark.country; //国家
- NSString *inlandWater=placemark.inlandWater; //水源、湖泊
- NSString *ocean=placemark.ocean; // 海洋
- NSArray *areasOfInterest=placemark.areasOfInterest; //关联的或利益相关的地标*/
+/*placemark.name;//地名
+ placemark.thoroughfare;//街道
+ placemark.subThoroughfare; //街道相关信息，例如门牌等
+ placemark.locality; // 城市
+ placemark.subLocality; // 城市相关信息，例如标志性建筑
+ placemark.administrativeArea; // 州
+ placemark.subAdministrativeArea; //其他行政区域信息
+ placemark.postalCode; //邮编
+ placemark.ISOcountryCode; //国家编码
+ placemark.country; //国家
+ placemark.inlandWater; //水源、湖泊
+ placemark.ocean; // 海洋
+ <NSArray *>placemark.areasOfInterest; //关联的或利益相关的地标*/
 
 
 

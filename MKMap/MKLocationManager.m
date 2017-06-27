@@ -123,6 +123,4 @@ static MKLocationManager * _manager = nil;
  placemark.ocean; // 海洋
  <NSArray *>placemark.areasOfInterest; //关联的或利益相关的地标*/
 
-
-
 @end
